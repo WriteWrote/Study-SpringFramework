@@ -1,19 +1,23 @@
 package ru.ellinaobukhova.springcourse;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MusicPlayer {
-    private Music music;
+    private List<Music> musicList;
     private String name;
     private int volume;
 
     public MusicPlayer() {
+        musicList = new ArrayList<>();
     }
 
-    public MusicPlayer(Music music) {
-        this.music = music;
+    public MusicPlayer(List<Music> music) {
+        this.musicList = music;
     }
 
-    public void setMusic(Music music) {
-        this.music = music;
+    public void setMusicList(List<Music> music) {
+        this.musicList = music;
     }
 
     public void setName(String name) {
@@ -33,6 +37,9 @@ public class MusicPlayer {
     }
 
     public void playMusic() {
-        System.out.println("Playing " + this.music.getSong() + " now!");
+        for (Music typeOfMusic :
+                musicList) {
+            System.out.println("Playing " + typeOfMusic.getSong() + " now!");
+        }
     }
 }
