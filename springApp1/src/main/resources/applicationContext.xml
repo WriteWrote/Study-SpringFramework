@@ -16,7 +16,7 @@
     <bean id="musicPlayerBean"
           class="ru.ellinaobukhova.springcourse.MusicPlayer">
         <property name="music" ref="classicalMusicBean"/>
-        <property name="name" value="Samsung"/>
-        <property name="volume" value="50"/>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 </beans>
