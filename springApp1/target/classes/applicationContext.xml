@@ -12,6 +12,8 @@
     </bean>
     <bean id="musicPlayerBean"
           class="ru.ellinaobukhova.springcourse.MusicPlayer">
-        <constructor-arg ref="classicalMusicBean"/>
+        <property name="music" ref="classicalMusicBean"/>
+        <property name="name" value="Samsung"/>
+        <property name="volume" value="50"/>
     </bean>
 </beans>
