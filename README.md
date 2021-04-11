@@ -5,4 +5,5 @@ Studying spring-course from alishev: https://www.youtube.com/watch?v=5ePo08sqcpk
 After that I'll try to fulfill the exercise in the end of Lesson 6: modify MusicPlayer, so it could play a whole list of music genres.
 
 **Task2:** need to create bins with Singltone-scope and Prototype-scope. Create init- and destroy-methods. Look up, how many times init-method is called up to for prototype bins vs for singletone bins. Also look up if prototype bin calles up destroy-method.
-** * ** Just for me: insert using fabric-method
+
+**Just for me:** insert using fabric-method
