@@ -8,11 +8,24 @@ public class MusicPlayer {
     private String name;
     private int volume;
 
-    public MusicPlayer() {
+    private MusicPlayer() {
         musicList = new ArrayList<>();
     }
 
-    public MusicPlayer(List<Music> music) {
+    private static MusicPlayer musicPlayerFactory() {
+        MusicPlayer res = new MusicPlayer();
+        List<Music> musicList = new ArrayList<>();
+        musicList.add(new Music() {
+            @Override
+            public String getSong() {
+                return "Lindsey Stirling Violin Song";
+            }
+        });
+        res.setMusicList(musicList);
+        return res;
+    }
+
+    private MusicPlayer(List<Music> music) {
         this.musicList = music;
     }
 

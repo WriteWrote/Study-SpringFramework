@@ -29,14 +29,15 @@
           class="ru.ellinaobukhova.springcourse.MusicPlayer"
           scope="prototype"
           init-method="init"
-          destroy-method="destroy">
-        <property name="musicList">
+          destroy-method="destroy"
+          factory-method="musicPlayerFactory">
+        <!--><property name="musicList">
             <list>
                 <ref bean="classicalMusicBean"/>
                 <ref bean="rockMusicBean"/>
                 <ref bean="dubstepMusicBean"/>
             </list>
-        </property>
+        </property></!-->
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
     </bean>

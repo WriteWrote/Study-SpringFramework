@@ -11,7 +11,7 @@ public class TestSpring {
         MusicPlayer player1 = context.getBean("musicPlayerBean", MusicPlayer.class);
         player1.setVolume(100);
         System.out.println("Player " + player1.getName() + ", volume: " + player1.getVolume());
-        //player1.playMusic();
+        player1.playMusic();
 
         MusicPlayer player2 = context.getBean("musicPlayerBean", MusicPlayer.class);
         boolean res = player1 == player2;
