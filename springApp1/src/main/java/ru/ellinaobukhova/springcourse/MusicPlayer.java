@@ -42,4 +42,12 @@ public class MusicPlayer {
             System.out.println("Playing " + typeOfMusic.getSong() + " now!");
         }
     }
+
+    private void init() {
+        System.out.println("Initialising music player");
+    }
+
+    private void destroy() {
+        System.out.println("Destroying music player");
+    }
 }
